@@ -1,0 +1,16 @@
+.test-api-main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5pc;
+
+    h1 {
+        text-align: center;
+        color: #fff;
+        background-color: aquamarine;
+    }
+    .Contents {
+        width: 100%;
+        height: 500px;
+        border: 1px solid black;
+    }
+}

@@ -1,0 +1,34 @@
+.example-two-main-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+
+    .spline-element-div {
+        width: 100%;
+        height:100%;
+        // overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #555;
+        position: relative;
+       
+        .spline-element{
+                // transform: rotate(45deg);
+                width: 100%;
+                height:100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            canvas{
+                width: 150% !important;
+                height: 120% !important;
+                object-fit: contain;
+                // transform: scale(2);
+            }
+        }
+       
+    }
+}

@@ -1,0 +1,96 @@
+.test-img-masking-main-container {
+    width: 100%;
+    height: 800px;
+    // background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .section-one {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        position: relative;
+        
+
+        video {
+            // position: absolute;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .mask1 {
+            width: 40%;
+            height: 60%;
+            mask-image: url(../img/vector873.png);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-mode: alpha;
+        
+            background-color: bisque;
+
+
+        }
+    }
+
+
+    // --------------masking by -mixed bland mode--------------------
+    .section-two {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        section {
+            position: relative;
+            width: 60%;
+            height: 80%;
+            background: url(../img//pexels-eberhard-grossgasteiger-2098427.jpg);
+            // background: url(../img/Mgroup527.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: 1px solid black;
+            background-position: center;
+
+
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 10%;
+                width: 80%;
+                height: 100%;
+                // background: url(https://drive.google.com/file/d/1FGVAU_UyK9nZVRpb3smpskiVrfkzqgg-/view);
+                background: url(../img/frame547.png);
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                mix-blend-mode: overlay;
+                // mix-blend-mode: normal;
+                // mix-blend-mode: multiply;
+                // mix-blend-mode: screen;
+                // mix-blend-mode: darken;
+                // mix-blend-mode: lighten;
+                // mix-blend-mode: color-dodge;
+                // mix-blend-mode: color-burn;
+                // mix-blend-mode: hard-light;
+                // mix-blend-mode: soft-light;
+                // mix-blend-mode: difference;
+                // mix-blend-mode: exclusion;
+                // mix-blend-mode: hue;
+                // mix-blend-mode: saturation;
+                // mix-blend-mode: color;
+                // mix-blend-mode: luminosity
+
+
+            }
+        }
+    }
+}

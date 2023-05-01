@@ -1,0 +1,123 @@
+.One {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    overflow: hidden;
+
+    .intoView-div {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 0.5% 1.5%;
+        text-transform: uppercase;
+        background-color: green;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .footer-intoView-div {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        padding: 0.5% 1.5%;
+        text-transform: uppercase;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .div2 {
+        width: 100%;
+        height: 1000px;
+        background-color: antiquewhite;
+    }
+
+    .div1 {
+        width: 100%;
+        height: 100px;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #fff;
+
+        h1 {
+            font-weight: 400;
+        }
+    }
+
+    .div3 {
+        width: 100%;
+        height: 1000px;
+        background-color: blue;
+    }
+
+    .footer-div {
+        width: 100%;
+        height: 100px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #fff;
+
+        h1 {
+            font-weight: 400;
+        }
+    }
+}
+
+.test-main-container {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    position: relative;
+
+    p {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    // .container-one,
+    // .container-two,
+    // .container-three,
+    // .container-four {
+    //     width: 100%;
+    //     height: 800px;
+    //     background-color: bisque;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     font-size: 3rem;
+    //     font-weight: 600;
+    //     color: #fff;
+    //     transition: 2s;
+    // }
+
+    // .container-two {
+    //     background-color: aqua;
+    //     height: 600px;
+    // }
+    // .container-three {
+    //     background-color: orangered;
+    //     height: 900px;
+    // }
+    // .container-four {
+    //     background-color: yellowgreen;
+    //     height: 1100px;
+    // }
+
+}

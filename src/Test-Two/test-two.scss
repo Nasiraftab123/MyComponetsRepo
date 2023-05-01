@@ -1,0 +1,43 @@
+.test-two-main-container {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    position: relative;
+
+    p {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .container-one,
+    .container-two,
+    .container-three,
+    .container-four {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: 600;
+        color: #fff;
+        transition: 2s;
+    }
+    .container-one {
+        height: 800px;
+        background-color: bisque;
+    }
+
+    .container-two {
+        background-color: aqua;
+        height: 600px;
+    }
+    .container-three {
+        background-color: orangered;
+        height: 900px;
+    }
+    .container-four {
+        background-color: yellowgreen;
+        height: 1100px;
+    }
+}

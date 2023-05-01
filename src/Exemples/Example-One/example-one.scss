@@ -1,0 +1,219 @@
+.example-one-main-container {
+    width: 100%;
+    height: 100vh;
+    // background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .bg-color-div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        z-index: -2;
+    }
+
+
+    // --------------------------------Rotating Elements------------------------
+    @keyframes rotation {
+        100% {
+            transform: rotate(-360deg)
+        }
+    }
+
+    .circle {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        // background-color: #fff;
+        border: 4px solid transparent;
+        // border: 4px solid #E1FF01;
+        border-top: 4px solid steelblue;
+
+        // animation: rotation 1s ease-in-out infinite;
+        &::after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: steelblue;
+            position: absolute;
+            top: 12%;
+            left: 10%;
+            box-shadow: 0 0 0 5px rgba(158, 201, 237, 0.3),
+                0 0 0 8px rgba(158, 201, 237, 0.2),
+                0 0 0 14px rgba(158, 201, 237, 0.1);
+
+        }
+    }
+
+    .circle-one {
+        margin-left: 6%;
+        animation: rotation 2s linear infinite reverse;
+
+        &::after {
+            top: 13%;
+            left: 85%;
+
+
+        }
+
+    }
+
+    .circle-two {
+        margin-top: 10%;
+        animation: rotation 2s linear infinite reverse;
+        animation-delay: -0.5s;
+
+        &::after {
+            top: 13%;
+            left: 85%;
+
+
+        }
+
+    }
+
+    .circle-three {
+        margin-right: 6%;
+        animation: rotation 2s linear infinite;
+
+    }
+    // ----------------------------------------------------------------------
+
+
+    // --------------------------------Gradient Box--------------------------
+
+    .gradient-div {
+        position: absolute;
+        right: 10%;
+        top: 5%;
+        width: 400px;
+        height: 200px;
+        background: linear-gradient(0deg, black, rgb(44, 43, 43));
+        // z-index: 1;
+
+        @keyframes animaeBox {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+
+        }
+        // &::after{
+        //     opacity: 0;
+        // }
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff,
+                    #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+            background-size: 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            // opacity: 0.5;
+            animation: animaeBox 20s linear infinite;
+
+
+        }
+
+        &::after {
+            filter: blur(5px);
+
+        }
+    }
+    // -------------------------------------------------------------------
+
+
+    // ------------------------------Neon Button--------------------------
+
+    .btn-div {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        padding: 1% 2%;
+        border: 2px solid #00ffff;
+        border-radius: 5px;
+        text-align: center;
+        color: #00ffff;
+        text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+        cursor: pointer;
+        transition: 100ms linear;
+        box-shadow: 0 0 10px #00ffff, inset 0 0 10px #00ffff;
+        font-weight: 500;
+
+        &:hover {
+            background-color: #00ffff;
+            // opacity: 0.8;
+            color: #555;
+
+        }
+
+        &::after {
+            content: '';
+            pointer-events: none;
+            position: absolute;
+            left: 0%;
+            top: 180%;
+            width: 100%;
+            height: 50%;
+            background: #00FFFF;
+            transform: perspective(20px) rotateX(10deg) scale(1.5, 0.8);
+            filter: blur(30px);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            box-shadow: 0 0 50px 10px #00ffff;
+            transition: 100ms linear;
+        }
+
+        &:hover::before {
+            opacity: 1;
+        }
+
+    }
+    // -------------------------------------------------------------------
+
+    //----------------------gsap----------------------------------------------------
+
+    .gsap-comp{
+        position: absolute;
+        left: 5%;
+        bottom: 4%;
+        width: 11%;
+        height: 20%;
+        border-radius: 50%;
+        background-color: #fff;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1vw;
+        font-weight: 500;
+
+
+    }
+
+
+}

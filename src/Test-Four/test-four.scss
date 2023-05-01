@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+
+.container {
+    background-color: blue;
+}
+
+//font-family: 'Rubik 80s Fade', cursive;
+//font-family: 'Rubik Wet Paint', cursive;
+//font-family: 'Rubik Beastly', cursive;
+//font-family: 'Rubik Glitch', cursive;
+//font-family: 'Rubik Vinyl', cursive;
+
+p {
+    font: 4rem "Rubik Moonrocks", cursive;
+    font-weight: bold;
+    color: orange;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.multiply {
+    mix-blend-mode: multiply;
+}
+
+.screen {
+    mix-blend-mode: screen;
+}
+
+.hard-light {
+    mix-blend-mode: hard-light;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.test-fout-main-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    .nav-bar-div {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6%;
+        background-color: #fff;
+        display: flex;
+        border: 5px solid pink;
+        justify-content: space-evenly;
+        border: 1px solid red;
+
+        p {
+            position: absolute;
+            top: 100%;
+            left: 45%;
+            background-color: red;
+            padding: 0.5% 1%;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .content-div-style {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #ff4d4d;
+        }
+
+        .one {
+            width: 15%;
+            height: 100%;
+            // border-radius: 5px;
+            border: 1px solid black;
+            border-bottom: none;
+            border-top: none;
+            background-color: #dbd0c0;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+        .two {
+            width: 15%;
+            height: 100%;
+            // border-radius: 5px;
+            border: 1px solid black;
+            border-bottom: none;
+            border-top: none;
+            background-color: #dbd0c0;
+            position: relative;
+            display: flex;
+
+            .content-div {
+                @extend .content-div-style;
+            }
+        }
+        .three {
+            width: 15%;
+            height: 100%;
+            // border-radius: 5px;
+            border: 1px solid black;
+            border-bottom: none;
+            border-top: none;
+            position: relative;
+            background-color: #dbd0c0;
+            display: flex;
+
+            .content-div {
+                @extend .content-div-style;
+            }
+        }
+        .four {
+            width: 55%;
+            height: 100%;
+            // border-radius: 5px;
+            // border: 1px solid black;
+            background-color: #fff;
+            position: relative;
+            display: flex;
+        }
+
+        .content-div {
+            @extend .content-div-style;
+        }
+
+        .after-class-style {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            // position: absolute;
+            // z-index: 1;
+        }
+        .one::after {
+            @extend .after-class-style;
+        }
+        .two::after {
+            @extend .after-class-style;
+        }
+        .three::after {
+            @extend .after-class-style;
+        }
+    }
+
+    .container-one,
+    .container-two,
+    .container-three,
+    .container-four {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: 600;
+        color: #fff;
+        transition: 2s;
+        box-sizing: border-box;
+    }
+
+    .para-content-style {
+        font-family: "Rubik Vinyl", cursive;
+        font-weight: 500;
+
+    }
+    .container-one {
+        background-color: midnightblue;
+        .para-content {
+            @extend .para-content-style;
+        }
+    }
+    .container-two {
+        background-color: cadetblue;
+        height: 600px;
+
+        .para-content {
+            @extend .para-content-style;
+        font-family: 'Rubik Glitch', cursive;
+    }
+    }
+    .container-three {
+        background-color: firebrick;
+        height: 900px;
+
+        .para-content {
+            @extend .para-content-style;
+            font-family: "Rubik Wet Paint", cursive;
+        }
+    }
+    .container-four {
+        background-color: crimson;
+        height: 1100px;
+
+        .para-content {
+            @extend .para-content-style;
+            font-family: "Rubik Beastly", cursive;
+        }
+    }
+}
