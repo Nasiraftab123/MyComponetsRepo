@@ -14,14 +14,22 @@ import MouseDragging from './Mouse-Dragging/mouse-dragging';
 import ReactTilt from './React-Tilt/react-tilt';
 import PLXTestOne from './Parallax-Scrolling/PLX-Test-One/plx-test-one';
 import AnimeOne from './3d-Anime-Comp/3d-Anime-One/anime-one';
+import AnimeTwo from './3d-Anime-Comp/3d-Anime-Two/anime-two';
 import PLXTestTwo from './Parallax-Scrolling/PLX-Test-Two/plx-test-two';
 import StickyRoll from './StickyRoll/sticky-roll';
 import ReactRipple from './React-Ripple/react-ripple';
 import ExampleOne from './Exemples/Example-One/example-one';
 import ExampleTwo from './Exemples/Exemple-Two/example-two';
+import ExampleThree from './Exemples/Exemple-Three/example-three';
+import OverscrollPrevention from './Over-Scroll-Prevent/overscroll-prevention';
+
+// -------------------------[ useContext Hook ]-------------------------------------------
+import UseContextComp from './React-useContext-Hook/UseContext/use-context-comp';
+import MainApp from './React-useContext-Hook/AppContext/main-app';
+
 //   const backgroundImage = 'path/to/your/background/image.jpg'; // Replace this with the actual path
 
-
+// import video from './video-src/PitchCatalystHomePage.mp4'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -39,11 +47,16 @@ root.render(
     {/* <ReactTilt /> */}
     {/* <PLXTestOne /> */}
     {/* <AnimeOne /> */}
+    <AnimeTwo />
     {/* <PLXTestTwo/> */}
     {/* <StickyRoll /> */}
     {/* <ReactRipple /> */}
-    <ExampleOne />
+    {/* <ExampleOne /> */}
     {/* <ExampleTwo /> */}
+    {/* <ExampleThree src='./video-src/PitchCatalystHomePage.mp4'/> */}
+    {/* <UseContextComp/> */}
+    {/* <MainApp /> */}
+    {/* <OverscrollPrevention /> */}
 
   </React.StrictMode>
 );

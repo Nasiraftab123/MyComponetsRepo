@@ -24,7 +24,7 @@ export default function ExampleTwo() {
     // convas.style.width='100px'
 
     const styling = {
-        width: '60%',
+        width: '100%',
         height: '80%',
         // backgroundColor: 'yellow'
 
@@ -41,7 +41,7 @@ export default function ExampleTwo() {
 
                 <Spline
                     className='spline-element'
-                    style={styling}
+                    // style={styling}
                     // scene="https://my.spline.design/applewatchcopy-794877a5ff45446678a93708903d60f7/scene.splinecode"
                     scene="https://my.spline.design/untitled-40fea87e43681d174f35ab1c7aaeef01/scene.splinecode"
 

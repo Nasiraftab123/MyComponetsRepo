@@ -6,9 +6,13 @@ import City from "../../img/parallax-two-img/city.jpg";
 import Fly from "../../img/parallax-two-img/fly.jpg";
 
 export default function PLXTestTwo() {
-    return (
-        <div className="plx-test-two-main-container">
-            <Parallax strength={300} bgImage={Woman}>
+  return (
+    <div className="plx-test-two-main-container">
+      {/* <div style={{
+        width: '100%',
+        height: '90vw'
+      }}></div> */}
+      <Parallax strength={300} bgImage={Woman}>
         <div className="content">
           <div className="text-content">Normal Parallax</div>
         </div>
@@ -27,6 +31,6 @@ export default function PLXTestTwo() {
       </Parallax>
 
       <div className="content"></div>
-        </div>
-    )
+    </div>
+  )
 }
