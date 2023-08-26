@@ -2,8 +2,7 @@ import React, { createContext } from 'react';
 import ChildA from './childA';
 
 
-const dataOne = createContext();
-const dataTwo = createContext();
+const contextData = createContext();
 
 export default function UseContextComp() {
 
@@ -12,14 +11,12 @@ export default function UseContextComp() {
 
     return (
         <div className="use-context-comp-main-container">
-            <dataOne.Provider value={fName} >
-                <dataTwo.Provider value={lName} >
-                    <ChildA />
-                </dataTwo.Provider>
-            </dataOne.Provider>
+            <contextData.Provider value={{ fName, lName }} >
+                <ChildA />
+            </contextData.Provider>
 
         </div>
     )
 }
 
-export { dataOne, dataTwo }
+export { contextData }

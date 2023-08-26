@@ -1,18 +1,18 @@
 import React from 'react';
 import './childB.scss';
-import {dataOne,  dataTwo} from './use-context-comp';
+import { contextData } from './use-context-comp';
 import { useContext } from 'react';
 
 export default function ChildB() {
-    const FirstName = useContext(dataOne)
-    const SecondtName = useContext(dataTwo)
+
+  const { fName, lName } = useContext(contextData)
 
   return (
     <div className="childb-main-container">
 
-        <div>
-            <p>{FirstName}{' '}{SecondtName}</p>
-        </div>
+      <div>
+        <p>{fName}{' '}{lName}</p>
+      </div>
 
     </div>
   )
